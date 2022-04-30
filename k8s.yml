@@ -2,7 +2,8 @@
 - #this minus is required in yaml it indicate list of items. Playbook contains a list of play and every play will be a dictionary
 #host: where you want to run your playbook
   hosts: k8s
-  become: yes
+  collections:
+    - community.kubernetes
   tasks: 
   - name: create a namespace
     kubernetes.core.k8s:
@@ -10,7 +11,8 @@
       api_version: v1
       kind: Namespace
       state: present
-
+    become: yes
+kubectl create namespace gopal 
 
         
     
