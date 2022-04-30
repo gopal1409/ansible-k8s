@@ -1,1 +1,4 @@
-k8s ansible_host=20.83.188.230 ansible_username=gopal
+[azure]
+k8s
+[azure:vars]
+ansible_host=20.83.188.230 ansible_username=gopal
