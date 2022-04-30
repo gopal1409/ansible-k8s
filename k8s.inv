@@ -1,4 +1,4 @@
 [azure]
 k8s
 [azure:vars]
-ansible_ssh_host=20.83.188.230 ansible_username=gopal
+ansible_ssh_host=20.83.188.230 ansible_ssh_username=gopal ansible_ssh_pass=Admin@12345678
