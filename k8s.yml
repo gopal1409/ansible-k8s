@@ -5,7 +5,7 @@
   become: yes
   tasks: 
   - name: create a namespace
-    kubernetes.core.k8s:
+    k8s:
       name: dev 
       api_version: v1
       kind: Namespace 
