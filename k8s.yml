@@ -7,7 +7,7 @@
   - name: create a namespace
     kubernetes.core.k8s:
       state: present
-      definitions:
+      definition:
         apiVersion: v1
         kind: Namespace
         metadata:
