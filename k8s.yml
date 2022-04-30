@@ -6,11 +6,10 @@
   tasks: 
   - name: create a namespace
     kubernetes.core.k8s:
-      name: dev 
+      name: testing
       api_version: v1
-      kind: Namespace 
-      state: present 
-      
+      kind: Namespace
+      state: present
 
 
         
