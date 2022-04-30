@@ -5,13 +5,13 @@
   collections:
     - community.kubernetes
   tasks: 
-  - name: create a namespace
-    kubernetes.core.k8s:
-      name: testing
-      api_version: v1
-      kind: Namespace
-      state: present
-    become: yes
+    - name: create a namespace
+      kubernetes.core.k8s:
+        name: testing
+        api_version: v1
+        kind: Namespace
+        state: present
+      become: yes
 
 
         
