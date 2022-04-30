@@ -12,7 +12,7 @@
       kind: Namespace
       state: present
     become: yes
-kubectl create namespace gopal 
+
 
         
     
